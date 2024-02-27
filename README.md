@@ -69,5 +69,44 @@ parrafo.style.textAlign = 'center';
 parrafo.style.fontSize = '100px';
 ```
 
-
 # Script3
+Por ultimo este script es capaz de generar 5 parrados aleatorios Cada parrafo se genera de manera aleatoria, el tamaño del parrafo esta dado entre 50 y 100 palabras ademas de mostrar el tamaño de caracteres de cada parrafo.
+
+```javascript
+function generarRandomParrafo(){
+    const minPalabras= 50;
+    const maxPalabras= 100;
+    const palabras =[ 'panda','motel','alex','syntek','madona','lady','gaga','pxndx','volovan','maroon5','slpinkton','juanes','kalimba','camila']
+```
+Creamos una función para generar el parrafo aleatorio tambien establezco los limites de las palabras utilizadas por parrafo y así usar la función Math.random para generarlas.
+Las palabras que se van a generar estaran guardadas en el arreglo 'palabras'.
+
+```javascript
+const parrafoLargo= Math.floor(Math.random()* (maxPalabras - minPalabras + 1)) + minPalabras;
+    let parrafoText='';
+```
+En seguida usamos un ciclo 'for' para generar 5 parrafos aleatorios 
+
+```javascript
+for (let i = 0; i < 5; i++) {
+    const paragraph = document.createElement('p');
+    const parrafoText = generarRandomParrafo();
+
+    paragraph.textContent = `${parrafoText} [${parrafoText.length} caracteres]`;
+    body.appendChild(paragraph);
+}
+```
+En cada iteracion se crea un 'parrafo' llamando ala función ademas de asignarle contenido al parrafo y mostrando los caracteres del parrafo a un lado.
+
+
+
+
+
+
+
+
+
+
+
+
+
