@@ -34,6 +34,10 @@ Se utiliza Math.random para generar los colores aleatorios recibiendo el tamaño
 ```javascript
 div.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)]
 ```
+Por ultimo se añade al documento para verlo en la pagina
+```javascript
+div.appendChild(parrafo)
+```
 
 ### Script2
 
