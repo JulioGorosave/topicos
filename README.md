@@ -39,7 +39,7 @@ Por ultimo se añade al documento para verlo en la pagina
 div.appendChild(parrafo)
 ```
 
-### Script2
+# Script2
 
 
-### Script3
+# Script3
